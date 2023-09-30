@@ -1,0 +1,15 @@
+{
+  "name": "nfq-techtalk",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "nx run-many -t start -p basic-sample delay-sample"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "16.9.1",
+    "nx": "16.9.1",
+    "nx-cloud": "latest"
+  }
+}
