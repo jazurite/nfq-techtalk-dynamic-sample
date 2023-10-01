@@ -50,8 +50,8 @@ class CartSurface extends CustomElement {
     isInitialized
 
     resources = {
-        stylesheets: ['cart-drawer.css'],
-        scripts: ['cart.js', 'cart-drawer.js', 'cart-item.js', 'cart-upsell.js', 'quantity-adjuster.js', 'variant-selector.js']
+        stylesheets: ['cart-drawer.css', 'swiper-bundle.min.css'],
+        scripts: ['swiper-bundle.min.js','cart.js', 'cart-drawer.js', 'cart-item.js', 'cart-upsell.js', 'quantity-adjuster.js', 'variant-selector.js']
     }
 
     constructor() {

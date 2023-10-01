@@ -18,6 +18,7 @@
     <script defer src="/cdn/shop/t/11/assets/helpers.js?v=27854430373278452491688024718"></script>
     <script defer src="/cdn/shop/t/11/assets/splide.min.js?v=15323724465567850331688024725"></script>
     <script defer src="/cdn/shop/t/11/assets/mediabox.min.js?v=150177701041689025671688024719"></script>
+    <script is="delay-script" url="/cdn/shop/t/11/assets/jquery.beefup.min.js?v=82952605651928686161688024714"></script>
 
     <style>
         .splide:not(.is-initialized) {
@@ -580,8 +581,7 @@
     <!-- BEGIN app block: shopify://apps/vitals-all-in-one-marketing/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8 -->
     <script data-ver="16" id="vtlsAebData" defer>window.vtlsLiquidData = {};
     window.vtlsLiquidData.cacheKeys = [1642067320, 0, 0, 1668528602, 1644587031, 0, 0];</script>
-    <script defer
-            src="https://appsolve.io/sf/v1/assets/js/main/emma-sleep-ca.myshopify.com/1695911603/bundle.js"></script>
+    <script is="delay-script" url="https://appsolve.io/sf/v1/assets/js/main/emma-sleep-ca.myshopify.com/1695911603/bundle.js"></script>
     <!-- END app app block -->
     <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
     <script defer>(function () {
@@ -798,10 +798,10 @@
                 trekkie.config = config || {};
                 trekkie.config.initialDocumentCookie = document.cookie;
                 var first = document.getElementsByTagName('script')[0];
-                var script = document.createElement('script');
+                var script = document.createElement('script', {is: 'delay-script'});
                 script.type = 'text/javascript';
                 script.onerror = function (e) {
-                    var scriptFallback = document.createElement('script');
+                    var scriptFallback = document.createElement('script', {is: 'delay-script'});
                     scriptFallback.type = 'text/javascript';
                     scriptFallback.onerror = function (error) {
                         var Monorail = {
@@ -858,11 +858,13 @@
 
                     };
                     scriptFallback.async = true;
-                    scriptFallback.src = '/cdn/s/trekkie.storefront.b31f2032c0d69b240cfbd23a96457e984a0bbbac.min.js';
+                    scriptFallback.phase="interactive"
+                    scriptFallback.url = '/cdn/s/trekkie.storefront.b31f2032c0d69b240cfbd23a96457e984a0bbbac.min.js';
                     first.parentNode.insertBefore(scriptFallback, first);
                 };
                 script.async = true;
-                script.src = '/cdn/s/trekkie.storefront.b31f2032c0d69b240cfbd23a96457e984a0bbbac.min.js';
+                script.phase="interactive"
+                script.url = '/cdn/s/trekkie.storefront.b31f2032c0d69b240cfbd23a96457e984a0bbbac.min.js';
                 first.parentNode.insertBefore(script, first);
             };
             trekkie.load(
@@ -2714,104 +2716,6 @@
             </div>
 
         </section>
-
-    </div>
-
-    <div id="shopify-section-template--15787492933770__featured-collections" class="shopify-section">
-
-        <link rel="stylesheet" href="/cdn/shop/t/11/assets/featured-collections.css?v=129998449819912879961690273877">
-
-
-        <section id="template--15787492933770__featured-collections" data-section-type="featured-collections-section"
-                 class="section-container">
-            <div class="section-chassis page-boundary">
-                <div class="section-header justify-start">
-                    <h2 class="heading-2 font-tiempos">Ellamart's Advanced Sleep Range</h2>
-                </div>
-
-
-                <div class="grid md:grid-cols-2 md:grid-rows-[repeat(2,_minmax(0,_240px))] gap-5">
-
-
-                    <!-- /snippets/collection-grid-item.liquid -->
-
-
-                    <div class="collection-card  collection-collage__item  text-center row-span-2 h-[343px] md:h-full">
-
-                        <a href="/collections/mattresses"
-                           class="collection-grid__item-link collection-collage__item-wrapper relative rounded-lg overflow-hidden">
-
-
-                            <div class="collection-grid__item-overlay grid__image lazyload transition ease-in-out hover:scale-125"
-                                 style="--bgsrc: url('https://cdn.accentuate.io/265063170186/1690184513583/new-mattresses.webp?v=1690184513584')"
-                                 data-bgset="/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif w h"
-                                 data-sizes="auto" data-parent-fit="cover"></div>
-
-                            <div class=" top-0 bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.75)_0%,_rgba(0,_0,_0,_0.00)_100%)]
-
-                absolute p-3 md:p-6 w-full text-white text-left">
-                                <p class="heading-2">Mattresses</p>
-                                <p class="uppercase font-semibold text-xs md:text-sm">Most Awarded</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <!-- /snippets/collection-grid-item.liquid -->
-
-
-                    <div class="collection-card  collection-collage__item  text-center h-[192px] md:h-full">
-
-                        <a href="/products/emma-bed-frame"
-                           class="collection-grid__item-link collection-collage__item-wrapper relative rounded-lg overflow-hidden">
-
-
-                            <div class="collection-grid__item-overlay grid__image lazyload transition ease-in-out hover:scale-125"
-                                 style="--bgsrc: url('https://cdn.accentuate.io/297062826122/1690184546401/Beds.jpg?v=1690184546401');"
-                                 data-bgset="/cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif w h"
-                                 data-sizes="auto" data-parent-fit="cover">
-                            </div>
-
-
-                            <div class=" bottom-0 bg-[linear-gradient(0deg,_rgba(0,_0,_0,_0.75)_0%,_rgba(0,_0,_0,_0.00)_100%)]
-                absolute p-3 md:p-6 w-full text-white text-left">
-                                <p class="heading-2">Beds</p>
-                                <p class="uppercase font-semibold text-xs md:text-sm">Long Lasting</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <!-- /snippets/collection-grid-item.liquid -->
-
-
-                    <div class="collection-card  collection-collage__item  text-center h-[192px] md:h-full">
-
-                        <a href="/products/emma-foam-pillow"
-                           class="collection-grid__item-link collection-collage__item-wrapper relative rounded-lg overflow-hidden">
-
-
-                            <div class="collection-grid__item-overlay grid__image lazyload transition ease-in-out hover:scale-125"
-                                 style="--bgsrc: url('https://cdn.accentuate.io/265063202954/1690184565451/pillows-bedding.webp?v=1690184565451');"
-                                 data-bgset="
- /cdn/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif w h"
-                                 data-sizes="auto" data-parent-fit="cover">
-                            </div>
-
-
-                            <div class=" bottom-0 bg-[linear-gradient(0deg,_rgba(0,_0,_0,_0.75)_0%,_rgba(0,_0,_0,_0.00)_100%)]
-                absolute p-3 md:p-6 w-full text-white text-left">
-                                <p class="heading-2">Pillows</p>
-                                <p class="uppercase font-semibold text-xs md:text-sm">Extra Comfort</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
 
     </div>
 
@@ -5251,26 +5155,22 @@
 <script is="delay-script" url="/cdn/shop/t/11/assets/lazy-component.js?v=182720789217119187421696073991"></script>
 <script is="delay-script" phase="interactive"
         url="https://cdn.shopify.com/s/files/1/0562/9873/3706/files/lazy.min.js?v=1696137308"></script>
-<script defer src="/cdn/shop/t/11/assets/jquery.ba-throttle-debounce.js?v=103250179697527314711688024714"></script>
-<script defer src="/cdn/shop/t/11/assets/jquery.beefup.min.js?v=82952605651928686161688024714"></script>
-<script defer src="/cdn/shop/t/11/assets/jquery.modal.min.js?v=15875380166552750701688024716"></script>
-<script defer src="/cdn/shop/t/11/assets/jquery.fancybox.min.js?v=102984942719613846721688024715"></script>
-<script defer src="/cdn/shop/t/11/assets/select2.min.js?v=49960443923896795481688024721"></script>
-<script defer src="/cdn/shop/t/11/assets/toastr.min.js?v=32063384496253430001688024728"></script>
-<script defer src="/cdn/shop/t/11/assets/swiper-bundle.min.js?v=30986975797822707101688024726"></script>
-<script defer src="/cdn/shop/t/11/assets/popper.min.js?v=106254159189482773611688024720"></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/jquery.ba-throttle-debounce.js?v=103250179697527314711688024714"></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/jquery.modal.min.js?v=15875380166552750701688024716"></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/jquery.fancybox.min.js?v=102984942719613846721688024715"></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/select2.min.js?v=49960443923896795481688024721"></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/toastr.min.js?v=32063384496253430001688024728"></script>
+<script is="delay-script" url=""></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/popper.min.js?v=106254159189482773611688024720"></script>
 
-<script defer src="/cdn/shop/t/11/assets/tippy-bundle.umd.min.js?v=106717848408361717631688024727"></script>
+<script is="delay-script" url="/cdn/shop/t/11/assets/tippy-bundle.umd.min.js?v=106717848408361717631688024727"></script>
 
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/jquery.modal.min.css?v=64857397979575196151688024716">
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/jquery.fancybox.css?v=159808164371632363711688024715">
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/splide.min.css?v=96280272462562602901688024724">
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/splide-core.min.css?v=23284300864073171001688024723">
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/toastr.min.css?v=68908210151308294901688024727">
-<link rel="stylesheet" href="/cdn/shop/t/11/assets/swiper-bundle.min.css?v=183092761113033764571688024725">
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/mediabox.min.css?v=178153156364416133851688024719">
-
-<script defer src="/cdn/shop/t/11/assets/modernizr.min.js?v=21391054748206432451647849408"></script>
 
 
 <script is="delay-script" phase="interactive" url="https://www.googleoptimize.com/optimize.js?id=OPT-KNFWBCL"></script>
@@ -5415,8 +5315,6 @@
 </script>
 
 <link rel="stylesheet" href="/cdn/shop/t/11/assets/new-splide.css?v=100926187677075264311687357027">
-
-<script defer src="/cdn/shop/t/11/assets/variant-selects.js?v=142778093263602674021694159162"></script>
 
 <script>
     window.routes = {

@@ -2,7 +2,7 @@
   .hero-container {
     display: grid;
     gap: 0.75rem;
-    grid-template-rows: minmax(0, 310px);
+    grid-template-rows: minmax(0, 400px);
 
     @media screen and (min-width: 769px) {
       gap: 0;
@@ -17,9 +17,9 @@
     position: relative;
 
     background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.75) 3.5%,
-      transparent 60%
+                    180deg,
+                    rgba(0, 0, 0, 0.75) 3.5%,
+                    transparent 60%
     );
 
     overflow: hidden;
@@ -66,6 +66,7 @@
         > * {
           color: inherit;
         }
+
         a {
           font-size: 12px;
         }
@@ -142,9 +143,12 @@
       inset: 0;
 
       img {
-        object-fit: fill;
+        object-fit: contain;
         height: 100%;
         max-width: 100%;
+        @media screen and (min-width: 769px) {
+          object-fit: cover;
+        }
       }
     }
   }
