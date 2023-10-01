@@ -1,9 +1,9 @@
 $.getStylesheet = function (href) {
     const $d = $.Deferred();
 
-    const url = new URL(href, "http://127.0.0.1:8082/")
+    const url = new URL(href, window.location.origin)
 
-    if(!url.searchParams.has('v')) url.searchParams.set('v', Date.now())
+    if (!url.searchParams.has('v')) url.searchParams.set('v', Date.now())
 
     const $link = $('<link/>', {
         rel: 'stylesheet',
@@ -50,8 +50,8 @@ class CartSurface extends CustomElement {
     isInitialized
 
     resources = {
-        stylesheets: ['cart-drawer.css'],
-        scripts: ['cart.js', 'cart-drawer.js', 'cart-item.js', 'cart-upsell.js', 'quantity-adjuster.js', 'variant-selector.js']
+        stylesheets: ['swiper-bundle.min.css', 'cart-drawer.css'],
+        scripts: ['swiper-bundle.min.js', 'cart.js', 'cart-drawer.js', 'cart-item.js', 'cart-upsell.js', 'quantity-adjuster.js', 'variant-selector.js']
     }
 
     constructor() {

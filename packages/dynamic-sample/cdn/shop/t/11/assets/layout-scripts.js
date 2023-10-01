@@ -16,7 +16,6 @@ Line 104:4 Transforming const to the configured target environment ("es5") is no
 $(document).ready(function () {
   navigationHamburger()
   languageSwitching()
-  navigationAccordion()
   cartDrawerCustomerSupport()
   contactUs()
   switchAffirmMessage()
@@ -74,15 +73,5 @@ function languageSwitching() {
     e.preventDefault()
     const currentLanguage = $('html').attr('lang');
     location.href = currentLanguage === 'en' ? franceUrl : englishUrl;
-  })
-}
-
-function navigationAccordion() {
-  $('.navigation-accordion-wrapper').beefup({
-    trigger: '.navigation-accordion',
-    content: '.navigation-accordion__content',
-    openSpeed: 100,
-    closeSpeed: 100,
-    openSingle: true
   })
 }
