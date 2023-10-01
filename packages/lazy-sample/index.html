@@ -70,47 +70,7 @@
     <link rel="alternate" hreflang="x-default" href="https:/">
     <link rel="alternate" hreflang="en-CA" href="https:/">
     <link rel="alternate" hreflang="fr-CA" href="https:/fr">
-    <script is="delay-script" phase="interactive">
-        (function () {
-            var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.en.b61b3f9dfdcc0a077f11.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.latest.en.22b066f200008aec130a.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.latest.en.54dfe5d34985e1982b50.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/23.latest.en.a7ee3a2bd3fc2ad170b2.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/733.latest.en.22cb4eafe0499ff4281e.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/39.latest.en.99827a586f76e932dc2d.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.f936660d1941d75ef257.js"];
-            var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/23.latest.en.3cbccf84d73cde1fb510.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.9d6b9f970cd086c012b2.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.latest.en.3ad1658c0d5df64841ff.css"];
-
-            function prefetch(url, as, callback) {
-                var link = document.createElement('link');
-                if (link.relList.supports('prefetch')) {
-                    link.rel = 'prefetch';
-                    link.fetchPriority = 'low';
-                    link.as = as;
-                    link.href = url;
-                    link.onload = link.onerror = callback;
-                    document.head.appendChild(link);
-                } else {
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('GET', url, true);
-                    xhr.onloadend = callback;
-                    xhr.send();
-                }
-            }
-
-            function prefetchAssets() {
-                var resources = [].concat(
-                    scripts.map(function (url) {
-                        return [url, 'script'];
-                    }),
-                    styles.map(function (url) {
-                        return [url, 'style'];
-                    })
-                );
-                var index = 0;
-                (function next() {
-                    var res = resources[index++];
-                    if (res) prefetch(res[0], res[1], next);
-                })();
-            }
-
-            addEventListener('load', prefetchAssets);
-        })();
-    </script>
+    <script is="delay-script" phase="interactive" url="/cdn/shop/t/11/assets/shopify-plugins.js?v=58483565803451788371695806730"></script>
     <script id="apple-pay-shop-capabilities" type="application/json" defer>{
         "shopId": 56298733706,
         "countryCode": "CA",
@@ -208,24 +168,6 @@
             "payment-terms": ["modules/client.payment-terms_8c0535c9.en.esm.js", "modules/chunk.common_b40c70c3.esm.js"]
         };
     </script>
-    <script is="delay-script" phase="interactive">(function () {
-        function asyncLoad() {
-            var urls = ["https:\/\/cdn.weglot.com\/weglot_script_tag.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn.avmws.com\/1021029\/?shop=emma-sleep-ca.myshopify.com", "\/\/cdn.shopify.com\/proxy\/971447fa0ca00471c4a74bf546f8fb248d71816fc5fd20c73369ed0354fa0437\/bingshoppingtool-t2app-prod.trafficmanager.net\/uet\/tracking_script?shop=emma-sleep-ca.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA", "\/\/staticw2.yotpo.com\/hEc3IC0lCXuQ15phwUS54IFWUkW2L7LAcNLTHkt6\/widget.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn-scripts.signifyd.com\/shopify\/script-tag.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn.attn.tv\/emmasleep\/dtag.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/www.dwin1.com\/41984.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/static.shareasale.com\/json\/shopify\/deduplication.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn1.judge.me\/assets\/installed.js?shop=emma-sleep-ca.myshopify.com", "\/\/productreviews.shopifycdn.com\/embed\/loader.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/my.parcelpanel.com\/assets\/admin\/custom\/js\/checkout.js?v=1.0.1\u0026shop=emma-sleep-ca.myshopify.com"];
-            for (var i = 0; i < urls.length; i++) {
-                var s = document.createElement('script');
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = urls[i];
-                var x = document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s, x);
-            }
-        };
-        if (window.attachEvent) {
-            window.attachEvent('onload', asyncLoad);
-        } else {
-            window.addEventListener('load', asyncLoad, false);
-        }
-    })();</script>
     <script id="__st" defer>var __st = {
         "a": 56298733706,
         "offset": -14400,
@@ -286,7 +228,7 @@
             margin: 0
         }
 
-        .splide:not(.is-initialized)  {
+        .splide:not(.is-initialized) {
             display: none;
         }
 
@@ -359,47 +301,6 @@
     <link rel="alternate" hreflang="x-default" href="https:/">
     <link rel="alternate" hreflang="en-CA" href="https:/">
     <link rel="alternate" hreflang="fr-CA" href="https:/fr">
-    <script is="delay-script" phase="interactive">
-        (function () {
-            var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.en.b61b3f9dfdcc0a077f11.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.latest.en.22b066f200008aec130a.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.latest.en.54dfe5d34985e1982b50.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/23.latest.en.a7ee3a2bd3fc2ad170b2.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/733.latest.en.22cb4eafe0499ff4281e.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/39.latest.en.99827a586f76e932dc2d.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.f936660d1941d75ef257.js"];
-            var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/23.latest.en.3cbccf84d73cde1fb510.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.9d6b9f970cd086c012b2.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.latest.en.3ad1658c0d5df64841ff.css"];
-
-            function prefetch(url, as, callback) {
-                var link = document.createElement('link');
-                if (link.relList.supports('prefetch')) {
-                    link.rel = 'prefetch';
-                    link.fetchPriority = 'low';
-                    link.as = as;
-                    link.href = url;
-                    link.onload = link.onerror = callback;
-                    document.head.appendChild(link);
-                } else {
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('GET', url, true);
-                    xhr.onloadend = callback;
-                    xhr.send();
-                }
-            }
-
-            function prefetchAssets() {
-                var resources = [].concat(
-                    scripts.map(function (url) {
-                        return [url, 'script'];
-                    }),
-                    styles.map(function (url) {
-                        return [url, 'style'];
-                    })
-                );
-                var index = 0;
-                (function next() {
-                    var res = resources[index++];
-                    if (res) prefetch(res[0], res[1], next);
-                })();
-            }
-
-            addEventListener('load', prefetchAssets);
-        })();
-    </script>
     <script id="apple-pay-shop-capabilities" type="application/json" defer>{
         "shopId": 56298733706,
         "countryCode": "CA",
@@ -497,25 +398,6 @@
             "payment-terms": ["modules/client.payment-terms_8c0535c9.en.esm.js", "modules/chunk.common_b40c70c3.esm.js"]
         };
     </script>
-    <script is="delay-script" phase="interactive">
-        (function () {
-            function asyncLoad() {
-                var urls = ["https:\/\/cdn.weglot.com\/weglot_script_tag.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn.avmws.com\/1021029\/?shop=emma-sleep-ca.myshopify.com", "\/\/cdn.shopify.com\/proxy\/971447fa0ca00471c4a74bf546f8fb248d71816fc5fd20c73369ed0354fa0437\/bingshoppingtool-t2app-prod.trafficmanager.net\/uet\/tracking_script?shop=emma-sleep-ca.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA", "\/\/staticw2.yotpo.com\/hEc3IC0lCXuQ15phwUS54IFWUkW2L7LAcNLTHkt6\/widget.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn-scripts.signifyd.com\/shopify\/script-tag.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn.attn.tv\/emmasleep\/dtag.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/www.dwin1.com\/41984.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/static.shareasale.com\/json\/shopify\/deduplication.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/cdn1.judge.me\/assets\/installed.js?shop=emma-sleep-ca.myshopify.com", "\/\/productreviews.shopifycdn.com\/embed\/loader.js?shop=emma-sleep-ca.myshopify.com", "https:\/\/my.parcelpanel.com\/assets\/admin\/custom\/js\/checkout.js?v=1.0.1\u0026shop=emma-sleep-ca.myshopify.com"];
-                for (var i = 0; i < urls.length; i++) {
-                    var s = document.createElement('script');
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = urls[i];
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                }
-            };
-            if (window.attachEvent) {
-                window.attachEvent('onload', asyncLoad);
-            } else {
-                window.addEventListener('load', asyncLoad, false);
-            }
-        })();</script>
     <script id="__st" defer>var __st = {
         "a": 56298733706,
         "offset": -14400,
@@ -545,10 +427,13 @@
         })
     }(document);</script>
     <script integrity="sha256-h4dvokWvGcvRSqiG7VnGqoonxF0k3NeoHPLSMjUGIz4="
-            data-source-attribution="shopify.loadfeatures" is="delay-script" phase="interactive"
+            data-source-attribution="shopify.loadfeatures"
+            is="delay-script"
+            phase="interactive"
             url="/cdn/shopifycloud/shopify/assets/storefront/load_feature-87876fa245af19cbd14aa886ed59c6aa8a27c45d24dcd7a81cf2d2323506233e.js"
             crossorigin="anonymous"></script>
-    <script crossorigin="anonymous" is="delay-script" phase="interactive"
+    <script crossorigin="anonymous"
+            is="delay-script" phase="interactive"
             url="/cdn/shopifycloud/shopify/assets/shopify_pay/storefront-a2d444786d996da5634fbbaeeffe6104ee672440dfa6cdcaebfb27dceaaf9c0f.js?v=20220906"></script>
     <script integrity="sha256-HAs5a9TQVLlKuuHrahvWuke+s1UlxXohfHeoYv8G2D8="
             data-source-attribution="shopify.dynamic-checkout" is="delay-script" phase="interactive"
@@ -575,7 +460,7 @@
 
 
     <!-- Start Weglot Script -->
-    <script is="delay-script" url="https://cdn.weglot.com/weglot.min.js" phase="interactive"></script>
+    <script is="delay-script" phase="interactive" url="https://cdn.weglot.com/weglot.min.js" phase="interactive"></script>
     <script id="has-script-tags" is="delay-script" phase="interactive">
         Weglot.initialize({api_key: 'wg_e352fa8c030a877a802a404aac1074d00'});
     </script>
@@ -617,8 +502,7 @@
     <!-- BEGIN app block: shopify://apps/vitals-all-in-one-marketing/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8 -->
     <script data-ver="16" id="vtlsAebData" defer>window.vtlsLiquidData = {};
     window.vtlsLiquidData.cacheKeys = [1642067320, 0, 0, 1668528602, 1644587031, 0, 0];</script>
-    <script is="delay-script"
-            url="https://appsolve.io/sf/v1/assets/js/main/emma-sleep-ca.myshopify.com/1695911603/bundle.js"></script>
+    <script is="delay-script" phase="interactive" url="https://appsolve.io/sf/v1/assets/js/main/emma-sleep-ca.myshopify.com/1695911603/bundle.js"></script>
     <!-- END app app block -->
     <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
     <script defer>(function () {
