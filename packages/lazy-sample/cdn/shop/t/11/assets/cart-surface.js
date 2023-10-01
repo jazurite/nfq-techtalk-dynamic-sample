@@ -1,7 +1,7 @@
 $.getStylesheet = function (href) {
     const $d = $.Deferred();
 
-    const url = new URL(href, "http://127.0.0.1:8082/")
+    const url = new URL(href, window.location.origin)
 
     if(!url.searchParams.has('v')) url.searchParams.set('v', Date.now())
 
