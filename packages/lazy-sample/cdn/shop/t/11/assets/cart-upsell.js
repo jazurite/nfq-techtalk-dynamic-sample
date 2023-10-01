@@ -24,7 +24,7 @@ class CartUpsell extends CustomElement {
       characterDataOldValue: true
     });
 
-    this.initSwiper()
+    setTimeout(this.initSwiper, 2000)
 
     this.$el.find("button").click(this.onAddUpsell)
   }
