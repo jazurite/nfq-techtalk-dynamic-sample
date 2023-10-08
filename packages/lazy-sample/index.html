@@ -368,20 +368,7 @@
     <script type="module" defer>!function (o) {
         (o.Shopify = o.Shopify || {}).modules = !0
     }(window);</script>
-    <script defer>!function (o) {
-        function n() {
-            var o = [];
 
-            function n() {
-                o.push(Array.prototype.slice.apply(arguments))
-            }
-
-            return n.q = o, n
-        }
-
-        var t = o.Shopify = o.Shopify || {};
-        t.loadFeatures = n(), t.autoloadFeatures = n()
-    }(window);</script>
     <script defer>window.ShopifyPay = window.ShopifyPay || {};
     window.ShopifyPay.apiHost = "shop.app\/pay";</script>
     <script defer>
@@ -410,24 +397,7 @@
         "p": "home"
     };</script>
     <script defer>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-    <script defer>!function (o) {
-        o.addEventListener("DOMContentLoaded", function () {
-            window.Shopify = window.Shopify || {}, window.Shopify.recaptchaV3 = window.Shopify.recaptchaV3 || {siteKey: "6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};
-            var t = ['form[action*="/contact"] input[name="form_type"][value="contact"]', 'form[action*="/comments"] input[name="form_type"][value="new_comment"]', 'form[action*="/account"] input[name="form_type"][value="customer_login"]', 'form[action*="/account"] input[name="form_type"][value="recover_customer_password"]', 'form[action*="/account"] input[name="form_type"][value="create_customer"]', 'form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");
 
-            function n(e) {
-                e = e.target;
-                null == e || null != (e = function e(t, n) {
-                    if (null == t.parentElement) return null;
-                    if ("FORM" != t.parentElement.tagName) return e(t.parentElement, n);
-                    for (var o = t.parentElement.action, r = 0; r < n.length; r++) if (-1 !== o.indexOf(n[r])) return t.parentElement;
-                    return null
-                }(e, ["/contact", "/comments", "/account"])) && null != e.querySelector(t) && ((e = o.createElement("script")).setAttribute("src", "https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"), o.body.appendChild(e), o.removeEventListener("focus", n, !0), o.removeEventListener("change", n, !0), o.removeEventListener("click", n, !0))
-            }
-
-            o.addEventListener("click", n, !0), o.addEventListener("change", n, !0), o.addEventListener("focus", n, !0)
-        })
-    }(document);</script>
     <script integrity="sha256-h4dvokWvGcvRSqiG7VnGqoonxF0k3NeoHPLSMjUGIz4="
             data-source-attribution="shopify.loadfeatures"
             is="delay-script"
@@ -498,7 +468,7 @@
 
     <!-- END app app block -->
     <!-- BEGIN app block: shopify://apps/vitals-all-in-one-marketing/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8 -->
-    <script data-ver="16" id="vtlsAebData" defer>window.vtlsLiquidData = {};
+    <script data-ver="16" id="vtlsAebData">window.vtlsLiquidData = {};
     window.vtlsLiquidData.cacheKeys = [1642067320, 0, 0, 1668528602, 1644587031, 0, 0];</script>
     <script is="delay-script" phase="interactive"
             url="https://appsolve.io/sf/v1/assets/js/main/emma-sleep-ca.myshopify.com/1695911603/bundle.js"></script>
@@ -1613,7 +1583,7 @@
 
 
                     <div class="wallpaper">
-                        <img alt="" width="2680" height="640" loading="lazy" class="mx-auto"
+                        <img alt="" width="2680" height="640" class="mx-auto"
                              src="https://cdn.shopify.com/s/files/1/0815/3907/2306/files/demo16-slide1_2000x_cfb20f6b-5725-4d0c-8624-a5818704dc9c.png?v=1695739091&amp;width=2680"
                              srcset="https://cdn.shopify.com/s/files/1/0815/3907/2306/files/demo16-slide1_2000x_cfb20f6b-5725-4d0c-8624-a5818704dc9c.png?v=1695739091&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0815/3907/2306/files/demo16-slide1_2000x_cfb20f6b-5725-4d0c-8624-a5818704dc9c.png?v=1695739091&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0815/3907/2306/files/demo16-slide1_2000x_cfb20f6b-5725-4d0c-8624-a5818704dc9c.png?v=1695739091&amp;width=1200 1200w, https://cdn.shopify.com/s/files/1/0815/3907/2306/files/demo16-slide1_2000x_cfb20f6b-5725-4d0c-8624-a5818704dc9c.png?v=1695739091&amp;width=1920 1920w, https://cdn.shopify.com/s/files/1/0815/3907/2306/files/demo16-slide1_2000x_cfb20f6b-5725-4d0c-8624-a5818704dc9c.png?v=1695739091&amp;width=2680 2680w">
                     </div>
@@ -4737,12 +4707,13 @@
         url="/cdn/shop/t/11/assets/jquery.ba-throttle-debounce.js?v=103250179697527314711688024714"></script>
 <script is="delay-script" url="/cdn/shop/t/11/assets/jquery.modal.min.js?v=15875380166552750701688024716"></script>
 <script is="delay-script" url="/cdn/shop/t/11/assets/jquery.fancybox.min.js?v=102984942719613846721688024715"></script>
-<script is="delay-script" url="/cdn/shop/t/11/assets/select2.min.js?v=49960443923896795481688024721"></script>
-<script is="delay-script" url="/cdn/shop/t/11/assets/toastr.min.js?v=32063384496253430001688024728"></script>
-<script is="delay-script" url=""></script>
-<script is="delay-script" url="/cdn/shop/t/11/assets/popper.min.js?v=106254159189482773611688024720"></script>
+<script is="delay-script" phase="interactive" url="/cdn/shop/t/11/assets/select2.min.js?v=49960443923896795481688024721"></script>
+<script is="delay-script" phase="interactive" url="/cdn/shop/t/11/assets/toastr.min.js?v=32063384496253430001688024728"></script>
 
-<script is="delay-script" url="/cdn/shop/t/11/assets/tippy-bundle.umd.min.js?v=106717848408361717631688024727"></script>
+<script is="delay-script" phase="interactive" url="/cdn/shop/t/11/assets/popper.min.js?v=106254159189482773611688024720"></script>
+
+<script is="delay-script" phase="interactive"
+        url="/cdn/shop/t/11/assets/tippy-bundle.umd.min.js?v=106717848408361717631688024727"></script>
 
 <link is="delay-stylesheet" href="/cdn/shop/t/11/assets/jquery.modal.min.css?v=64857397979575196151688024716">
 <link is="delay-stylesheet" href="/cdn/shop/t/11/assets/jquery.fancybox.css?v=159808164371632363711688024715">
@@ -4751,8 +4722,6 @@
 <link is="delay-stylesheet" href="/cdn/shop/t/11/assets/toastr.min.css?v=68908210151308294901688024727">
 <link is="delay-stylesheet" href="/cdn/shop/t/11/assets/mediabox.min.css?v=178153156364416133851688024719">
 
-
-<script is="delay-script" phase="interactive" url="https://www.googleoptimize.com/optimize.js?id=OPT-KNFWBCL"></script>
 <script>
     (function (w, d, s, l, i) {
         w[l] = w[l] || [];
